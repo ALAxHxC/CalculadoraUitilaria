@@ -1,0 +1,401 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ortiz.proyectoconversion.Ecuaciones_lineales">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.06"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewNvariables"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/N_variables"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="60dp" />
+
+            <EditText
+                android:id="@+id/editTextNVariables"
+                style="@style/Textos"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="50dp"
+                android:layout_weight="0.31" />
+
+            <Button
+                android:id="@+id/buttonRegistrar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Registrar_Variables"
+                style="@style/Botones"
+                android:textSize="50dp"
+                android:layout_weight="0.40" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.09" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eq1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editTextX1"
+                style="@style/Textos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewX1"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextY1"
+                style="@style/Textos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView1Y"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextZ1"
+                style="@style/Textos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewZ1"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewi1"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextR1"
+                style="@style/Textos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eq2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editTextX2"
+                style="@style/Textos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewX2"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextY2"
+                style="@style/Textos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewY2"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextZ2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"  style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewZ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextR2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"  style="@style/Textos"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eq3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editTextX3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"  style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewX3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextY3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewY3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y+"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextZ3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewZ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextR3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                style="@style/Textos"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.05">
+
+            <Button
+                android:id="@+id/buttonResolver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Resolver"
+                style="@style/Botones"
+                android:textSize="45dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewrX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X="
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewRX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewrrY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y="
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewRY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewrZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z="
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textViewRZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                style="@style/Textos"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/BannerInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>

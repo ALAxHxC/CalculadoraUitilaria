@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ortiz.proyectoconversion.BaseNumericas"
+    android:id="@+id/Principal"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Ly_Pincipal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextBin"
+                style="@style/Textos"
+                android:textSize="30dp" />
+
+            <Space
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:id="@+id/espacio1"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textViewBin"
+                android:text="@string/bin"
+                android:textSize="30dp"
+                android:textIsSelectable="true"
+                style="@style/Textos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextOct"
+                style="@style/Textos"
+                android:textSize="30dp" />
+
+            <Space
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView8"
+                android:text="@string/oct"
+                android:textSize="30dp"
+                style="@style/Textos"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText3Dec"
+                style="@style/Textos"
+                android:textSize="30dp" />
+
+            <Space
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView9"
+                android:text="@string/Dec"
+                android:textSize="30dp"
+                style="@style/Textos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextHex"
+                android:layout_weight="0.94"
+                style="@style/Textos"
+                android:textSize="30dp" />
+
+            <Space
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView10"
+                android:text="@string/Hex"
+                android:layout_weight="0.07"
+                style="@style/Textos"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="@string/Conv"
+                android:id="@+id/buttonConrv"
+                style="@style/Botones"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/BannerInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

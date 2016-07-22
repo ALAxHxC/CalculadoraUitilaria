@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="HardwareOptionMenu" parent="ThemeOverlay.AppCompat.Dark">
+
+        <item name="android:colorBackground">#010001</item>
+    </style>
+
+    <style name="Header" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="MyActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#010001</item>
+    </style>
+
+    <style name="Botones">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#010001</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/abc_button_inset_horizontal_material</item>
+    </style>
+
+    <style name="Textos">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="Bases">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#1f1f1f</item>
+    </style>
+
+
+    <style name="Theme.Baraction" parent="@style/Theme.AppCompat">
+        <item name="actionBarItemBackground">@drawable/selectable_background_baraction</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Baraction</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Baraction</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Baraction</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Baraction</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Baraction</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_baraction</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_baraction</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Baraction</item>
+
+
+    </style>
+
+    <style name="ActionBar.Solid.Baraction" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_baraction</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_baraction</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_baraction</item>
+        <item name="progressBarStyle">@style/ProgressBar.Baraction</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Baraction" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_baraction</item>
+        <item name="progressBarStyle">@style/ProgressBar.Baraction</item>
+    </style>
+
+    <style name="PopupMenu.Baraction" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_baraction</item>
+    </style>
+
+    <style name="DropDownListView.Baraction" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_baraction</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Baraction" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_baraction</item>
+    </style>
+
+    <style name="DropDownNav.Baraction" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_baraction</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_baraction</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_baraction</item>
+    </style>
+
+    <style name="ProgressBar.Baraction" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_baraction</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Baraction" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_baraction</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Baraction.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Baraction</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Baraction</item>
+    </style>
+
+</resources>

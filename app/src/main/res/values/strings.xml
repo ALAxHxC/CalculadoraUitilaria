@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Conversion</string>
+    <string name="Convertir">Convert to</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Seleccione">Select</string>
+    <string name="Calcular">Calculate</string>
+    <string name="numeros">Only numbers</string>
+    <string name="no_tiene_solucion">has not solution</string>
+    <string name="Digita_tu_procentaje">Put your percentage </string>
+    <string name="titulo">how much i need to approve?</string>
+    <string name="o">or</string>
+    <string name="numero_notas"># of notes</string>
+    <string name="nota">Note</string>
+    <string name="Reregstrar">Registrer</string>
+    <string name="nesecitas">Do you need</string>
+    <string name="digita_error">Can empty two fields</string>
+    <string name="Campo_no_nulo">Field cant be empty</string>
+    <string name="digita_nota">Write note numbrer </string>
+    <string name="No_valido">Bad input</string>
+    <string name="oct">Oct</string>
+    <string name="bin">Bin</string>
+    <string name="Dec">Dec</string>
+    <string name="Hex">Hex</string>
+    <string name="Conv">Convert</string>
+    <string name="Campo_obligatorio_numero">At least a field should not be empty</string>
+    <string name="Resolver">Slove</string>
+    <string name="N_variables"># Variables</string>
+    <string name="Admiten_Nvaribles">equation of 2 or 3 variables</string>
+    <string name="Registrar_Variables">Start</string>
+    <!--Titulos-->
+    <string name="title_activity_ecuacion_cuadratica">Square Equation</string>
+    <string name="title_activity_inicio">Slover</string>
+    <string name="title_activity_notas_activudad">do need to approve?</string>
+    <string name="title_activity_base_numericas">Number basess</string>
+    <string name="title_activity_conversion_bases">Unit Conversions</string>
+    <string name="title_activity_ecuaciones_lineales">Linear equation</string>
+    <!--Numero variables-->
+    <string name="N_variables_novalido">Debes escribir el numero de variables</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6637572105235229/3654917993</string>
+
+</resources>

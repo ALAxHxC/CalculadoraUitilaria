@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ortiz.proyectoconversion.NotasActivudad">
+
+    <LinearLayout
+        android:id="@+id/id_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/editTextNota"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editTextNota"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/Espacio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.17" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.12">
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                style="@style/Botones"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="CalcularNota"
+                android:text="@string/Calcular"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextNota"
+                style="@style/Textos"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_weight="0.50"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editTextPorcentaje"
+                style="@style/Textos"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_weight="0.50"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewO"
+                style="@style/Textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/o"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textIsSelectable="false"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.06">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Botones"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="iniciarConteo"
+                android:text="@string/numero_notas"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextnnotas"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nota"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editTextNota1"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextPocentaje1"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/Textos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="0.09">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Botones"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="RegistrarNota"
+                android:text="@string/Reregstrar"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/BannerInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

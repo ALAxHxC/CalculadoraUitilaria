@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Conversión</string>
+    <string name="Convertir">Convertir a</string>
+    <string name="Seleccione">Seleccione</string>
+    <string name="Calcular">Calcular</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="numeros">Solo se admiten caracteres numericos</string>
+    <string name="no_tiene_solucion">No tiene solución</string>
+    <string name="Digita_tu_procentaje">Pon tu procentaje actual </string>
+<string name="titulo">¿Cuanto necesicto para aprovar?</string>
+    <string name="o">o</string>
+    <string name="numero_notas"># de notas</string>
+    <string name="nota">Notas</string>
+    <string name="Reregstrar">Registrar</string>
+    <string name="nesecitas">Nesecitas</string>
+    <string name="digita_error">Los dos campos son obligatorios</string>
+    <string name="Campo_obligatorio_numero">Debes llenar al menos un campo</string>
+    <string name="Campo_no_nulo">El campo es obligatorio</string>
+    <string name="digita_nota">Digita nota numero </string>
+    <string name="No_valido">Digita bien los campos</string>
+    <string name="oct">Oct</string>
+    <string name="bin">Bin</string>
+    <string name="Dec">Dec</string>
+    <string name="Hex">Hex</string>
+    <string name="Conv">Convertir</string>
+    <string name="Resolver">Resolver</string>
+    <string name="Ecuacion">Ecuación</string>
+<!--Numero variables-->
+    <string name="N_variables_novalido">Debes escribir el numero de variables</string>
+    <string name="N_variables"># Variables</string>
+    <string name="Admiten_Nvaribles">Ecuaciones de 2 o 3 variables</string>
+    <string name="Registrar_Variables">Empezar</string>
+<!--Titulos-->
+    <string name="title_activity_ecuacion_cuadratica">Ecuacion Cuadratica</string>
+    <string name="title_activity_inicio">Slover</string>
+    <string name="title_activity_notas_activudad">¿Que te falta para pasar?</string>
+    <string name="title_activity_base_numericas">Bases Numericas</string>
+    <string name="title_activity_conversion_bases">Conversion de unidades</string>
+    <string name="title_activity_ecuaciones_lineales">Ecuación lineal</string>
+
+</resources>

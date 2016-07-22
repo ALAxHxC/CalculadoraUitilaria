@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ortiz.proyectoconversion.Inicio"
+    >
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/BannerInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/BannerInicial"
+        android:id="@+id/idvertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activity_conversion_bases"
+                    android:id="@+id/buttonConversion"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="EnviarConversion"
+                    style="@style/Botones" />
+
+                <Button
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activity_notas_activudad"
+                    android:id="@+id/buttonNotas"
+                    android:layout_gravity="right|top"
+                    android:onClick="EnviarNotas"
+                    android:layout_below="@+id/buttonCuadratica"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    style="@style/Botones" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="25px" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activity_ecuaciones_lineales"
+                    android:id="@+id/buttonEqLineales"
+                    android:layout_below="@+id/buttonBases"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="EnviarLineal"
+                    style="@style/Botones"
+                    android:layout_margin="@dimen/abc_button_inset_horizontal_material" />
+
+                <Button
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activity_base_numericas"
+                    android:id="@+id/buttonBases"
+                    android:layout_below="@+id/buttonNotas"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="EnviarBases"
+                    style="@style/Botones"
+                    android:layout_margin="@dimen/abc_button_inset_horizontal_material"
+                    android:layout_weight="0.50"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="25px" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_ecuacion_cuadratica"
+                android:id="@+id/buttonCuadratica"
+                android:layout_below="@+id/buttonConversion"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/buttonConversion"
+                android:layout_alignEnd="@+id/buttonConversion"
+                android:onClick="EnviarEcuacionCuadratica"
+                style="@style/Botones" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
